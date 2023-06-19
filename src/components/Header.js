@@ -1,7 +1,11 @@
 import React from "react";
 import Search from "./Search";
 
-function Header({ onSetSearch }) {
+function Header({ onSetSearch, sorted, onSetSorted }) {
+  function handleSort() {
+    onSetSorted(!sorted)
+  }
+
   return (
     <header>
       <h1>
@@ -11,8 +15,9 @@ function Header({ onSetSearch }) {
         gregslist
       </h1>
       <Search onSetSearch={onSetSearch} />
+      {sorted ? <button onClick={handleSort}>Do Not Sort By Location</button> : <button onClick={handleSort}>Sort By Location</button>}
     </header>
   );
 }
-
+ 
 export default Header;

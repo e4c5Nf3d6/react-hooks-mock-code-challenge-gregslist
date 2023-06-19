@@ -35,6 +35,12 @@
       "description": "Treadmill Parts For Free",
       "image": "./images/treadmill.jpg",
       "location": "East Flatbush"
+    },
+    {
+      "description": "Furby",
+      "image": "https://akns-images.eonline.com/eol_images/Entire_Site/2012311/1024.furby.mh.041112.jpg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
+      "location": "The Moon",
+      "id": 8
     }
   ]
 }
